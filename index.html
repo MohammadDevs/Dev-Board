@@ -21,9 +21,11 @@
         }
     </style>
 </head>
-<body class="bg-[#F4F7FF] my-text h-96 pt-4">
-    <!-- nav section Start -->
-    <nav class="bg-white max-w-6xl mx-auto py-3 px-4 rounded-lg">
+<body class="bg-[#F4F7FF] my-text pt-4 pb-11">
+    <!-- start header section -->
+    <header>
+        <!-- nav section Start -->
+    <nav class="bg-white max-w-6xl mx-auto py-3 px-4 rounded-lg mb-4">
         <!-- mother div -->
         <div class="flex justify-between">
             <!-- child 01 -->
@@ -41,6 +43,47 @@
             </div>
         </div>
     </nav>
+    <!-- nav section End -->
+    </header>
+     <!-- Start Main Section -->
+    <main class="bg-white max-w-6xl mx-auto p-5">
+        <!-- card side -->
+        <div class="w-3/4">
+                <!-- calender part Start -->
+             <!-- mother div -->
+             <div class="flex gap-4 justify-between"> <!--it is temporary mother-->
+                <!-- child 01 -->
+                <div class="bg-[#F4F7FF] rounded-xl w-52 h-24 flex gap-2 items-center p-1">
+                    <div class=""><img class="bg-white p-2 rounded-2xl" src="images/checkbox.png" alt=""></div>    
+                    <div class="text-center">
+                       <p class="font-medium text-gray-500">Task Assigned</p>
+                       <div class="font-bold text-xl">05</div>
+                   </div>
+                </div>
+             <!-- child 02 -->
+             <div class="bg-gradient-to-r from-[#3752FD] via-[
+             #6C7FFA]
+             to-[#9BA8F8] rounded-xl h-24 w-80">
+                hoga mara     
+             </div>
+             <!-- child 03 -->
+             <div class="bg-[#F4F7FF] rounded-xl w-52 h-24 flex gap-4 items-center p-3">
+             <div class=""><img class="bg-white p-2 rounded-2xl" src="images/calender.png" alt=""></div>    
+              <div class="text-center">
+              <div id="current-day" class="font-medium text-gray-500">d</div>
+                <div id="current-date" class="font-bold text-xl">d</div>
+              </div>
+             </div>
+        </div>
+        <!-- section section -->
+        </div>
+        <!-- history site -->
+        <div class="w-1/4">
+        
+        </div>
+    </main>
+
+    
 
     <script src="js/DevBoard.js"></script>
 </body>
