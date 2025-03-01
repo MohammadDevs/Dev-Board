@@ -15,9 +15,6 @@ const fullDate = tata.toLocaleDateString('en-US', optionsDate);  // তারি
 // তারিখ প্রদর্শন
 document.getElementById("current-date").innerText = fullDate;
 
-document.getElementById('current-day').addEventListener(click, function(){
-    console.log('khela hobe')
-})
     
 
     
