@@ -23,7 +23,7 @@
 </head>
 <!-- Dear Teacher and Developers, this web site coded in 1600px monitor -->
 
-<body class="bg-[#F4F7FF] my-text pt-4 pb-32">
+<body class="bg-[#F4F7FF] my-text pt-11 pb-32">
     <!-- start header section -->
     <header>
         <!-- nav section Start -->
@@ -41,7 +41,7 @@
                     <img src="images/checkbox.png" alt="">
                     <div class="font-bold text-2xl">23</div>
                 </div>
-                <div><img src="images/theme-btn.png" alt=""></div>
+                <div id="random-color"><img src="images/theme-btn.png" alt=""></div>
             </div>
         </div>
     </nav>
@@ -63,7 +63,7 @@
                    </div>
                 </div>
              <!-- child 02 -->
-             <div class="bg-gradient-to-r from-[#3752FD] via-[
+             <div id="answer-part" class="bg-gradient-to-r from-[#3752FD] via-[
              #6C7FFA] flex items-center justify-evenly
              to-[#9BA8F8] rounded-xl h-24 w-[450px]">
                 <div><img class="" src="images/board.png" alt=""></div>
@@ -73,15 +73,15 @@
              <div class="bg-[#F4F7FF] rounded-xl w-52 h-24 flex gap-4 items-center p-3">
              <div class=""><img class="bg-white p-2 rounded-2xl" src="images/calender.png" alt=""></div>    
               <div class="text-center">
-              <div id="current-day" class="font-medium text-gray-500">d</div>
-                <div id="current-date" class="font-bold text-xl">d</div>
+              <div id="current-day"></div>
+                <div id="current-date" class="font-bold text-xl"> </div>
               </div>
              </div>
         </div>
         <!-- card section -->
          <div class="mt-12 grid grid-cols-3 gap-3">
             <!-- card 1 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="first-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -99,7 +99,7 @@
                 </div>
              </div>
             <!-- card 2 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="second-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">CloudSync</button>
                 <h3 class="font-medium text-lg my-3">Add Dark Mode</h3>
                 <p class="bg-white rounded-lg p-1">Store the user's perference in <br> localStorage update css-</p>
@@ -117,7 +117,7 @@
                 </div>
              </div>
             <!-- card 3 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="third-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">SwiftPay</button>
                 <h3 class="font-medium text-lg my-3">Optimize Home page</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -135,7 +135,7 @@
                 </div>
              </div>
             <!-- card 4 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="fourth-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -153,7 +153,7 @@
                 </div>
              </div>
             <!-- card 5 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="fifth-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -171,7 +171,7 @@
                 </div>
              </div>
             <!-- card 6 -->
-            <div class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="sixth-card" class="bg-[#F4F7FF] p-2 rounded-lg">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -204,8 +204,8 @@
         </div>
     </main>
 
-    
-
+    <!-- javaScript links here -->
+    <script src="js/ans.js"></script>
     <script src="js/DevBoard.js"></script>
 </body>
 </html>
