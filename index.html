@@ -39,7 +39,7 @@
             <div class="flex gap-12 items-center ">
                 <div class="flex gap-3 items-center bg-[#F4F7FF] p-3 rounded-3xl">
                     <img src="images/checkbox.png" alt="">
-                    <div class="font-bold text-2xl">23</div>
+                    <div id="task-cullector" class="font-bold text-2xl">23</div>
                 </div>
                 <div id="random-color"><img src="images/theme-btn.png" alt=""></div>
             </div>
@@ -59,7 +59,7 @@
                     <div class=""><img class="bg-white p-2 rounded-2xl" src="images/checkbox.png" alt=""></div>    
                     <div class="text-center">
                        <p class="font-medium text-gray-500">Task Assigned</p>
-                       <div class="font-bold text-xl">05</div>
+                       <div id="task-assign" class="font-bold text-xl">06</div>
                    </div>
                 </div>
              <!-- child 02 -->
@@ -70,19 +70,19 @@
                 <div><p class="text-white">Discover Something <br> New Today!</p></div>     
              </div>
              <!-- child 03 -->
-             <div class="bg-[#F4F7FF] rounded-xl w-52 h-24 flex gap-4 items-center p-3">
+             <div class="bg-[#F4F7FF] rounded-xl w-52 h-24 flex gap-4 items-center p-2">
              <div class=""><img class="bg-white p-2 rounded-2xl" src="images/calender.png" alt=""></div>    
               <div class="text-center">
-              <div id="current-day"></div>
-                <div id="current-date" class="font-bold text-xl"> </div>
+              <div id="current-day" class="font-semibold text-lg flex justify-start"></div>
+                <div id="current-date" class="font-semibold text-lg"> </div>
               </div>
              </div>
         </div>
         <!-- card section -->
          <div class="mt-12 grid grid-cols-3 gap-3">
             <!-- card 1 -->
-            <div id="first-card" class="bg-[#F4F7FF] p-2 rounded-lg">
-                <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
+            <div id="first-card" class="bg-[#F4F7FF] p-2 rounded-lg ">
+                <button class="bg-white rounded-lg py-2 px-3 mt-3 completed-btn">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
                 <!-- flex div -->
@@ -94,12 +94,12 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
             <!-- card 2 -->
-            <div id="second-card" class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="second-card" class="bg-[#F4F7FF] p-2 rounded-lg ">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">CloudSync</button>
                 <h3 class="font-medium text-lg my-3">Add Dark Mode</h3>
                 <p class="bg-white rounded-lg p-1">Store the user's perference in <br> localStorage update css-</p>
@@ -112,12 +112,12 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
             <!-- card 3 -->
-            <div id="third-card" class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="third-card" class="bg-[#F4F7FF] p-2 rounded-lg ">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">SwiftPay</button>
                 <h3 class="font-medium text-lg my-3">Optimize Home page</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -130,12 +130,12 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
             <!-- card 4 -->
-            <div id="fourth-card" class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="fourth-card" class="bg-[#F4F7FF] p-2 rounded-lg ">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -148,12 +148,12 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
             <!-- card 5 -->
-            <div id="fifth-card" class="bg-[#F4F7FF] p-2 rounded-lg">
+            <div id="fifth-card" class="bg-[#F4F7FF] p-2 rounded-lg ">
                 <button class="bg-white rounded-lg py-2 px-3 mt-3">ShopEase</button>
                 <h3 class="font-medium text-lg my-3">Fix Mobile Button Issue</h3>
                 <p class="bg-white rounded-lg p-1">Debug using Chrome DevTools <br> Check for overlapping-</p>
@@ -166,7 +166,7 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
@@ -184,7 +184,7 @@
                     </div>
                     <!-- child 2 -->
                     <div>
-                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white">Completed</button>
+                        <button class="bg-blue-600 py-2 px-3 rounded-lg text-white completed-btn disabled:bg-gray-400 disabled:text-gray-300">Completed</button>
                     </div>
                 </div>
              </div>
@@ -192,19 +192,29 @@
          </div>
         </div>
         <!-- history site -->
-        <div class="w-1/4 bg-white rounded-xl p-4">
+        <div id="history-container" class="w-1/4 bg-white rounded-xl p-4">
             <div class="flex gap-3 justify-center mt-3">
                 <div><img src="images/activity.png" alt=""></div>
                 <div class="text-lg font-medium">Activity Log</div>
             </div>
             <!-- history btn -->
-            <div class="my-4 flex justify-center">
+            <div id="history-btn" class="my-4 flex justify-center">
                 <button class="bg-blue-600 py-2 px-3 rounded-lg text-white mb-7">Clear History</button>
+            </div>
+            <!-- comment-childs -->
+            <div id="comment-mother">
+                <div id="comment-1" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Fix Mobile Button Issue Fixd.</div>
+                <div id="comment-2" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Add Dark Mode Fixd.</div>
+                <div id="comment-3" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Optimize Home page Fixd.</div>
+                <div id="comment-4" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Add Dark Mode Fixd.</div>
+                <div id="comment-5" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Optimize Home page Fixd.</div>
+                <div id="comment-6" class="bg-[#F4F7FF] text-lg text-black border-4 border-indigo-500/100 p-3 rounded-lg mb-3">Fix Mobile Button Issue Fixd.</div>
             </div>
         </div>
     </main>
 
     <!-- javaScript links here -->
+     <script src="js/history.js"></script>
     <script src="js/ans.js"></script>
     <script src="js/DevBoard.js"></script>
 </body>

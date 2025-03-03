@@ -1,44 +1,71 @@
+// // first child
+// document.getElementById('first-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
+// // second child
+// document.getElementById('second-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
+// // chird child
+// document.getElementById('chird-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
+// // fourth child
+// document.getElementById('first-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
+// // fifth child
+// document.getElementById('first-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
+// // sixth child
+// document.getElementById('first-card')
+// .addEventListener('click', function(){
+//     const childOne = document.getElementById('comment-1');
+//     childOne.style.display = 'block';
+// });
 
-// this is data storage. but I can't understand fully. 
-// why we use this , if we use any array or other kind of variabl, is it work?
-// const storage = new Date();
-
-// // দিনের নাম এবং তারিখ আলাদা আলাদা ফরম্যাটে
-// const optionsDay = { weekday: 'short' };  // পূর্ণ দিনের নাম
-// const dayName = tata.toLocaleDateString('en-US', optionsDay);  // দিনের নাম
-// // দিন প্রদর্শন
-// document.getElementById("current-day").innerText = dayName;
-
-
-// const optionsDate = { year: 'numeric', month: 'short', day: 'numeric' };  // পূর্ণ তারিখ
-// const fullDate = tata.toLocaleDateString('en-US', optionsDate);  // তারিখ
-// // তারিখ প্রদর্শন
-// document.getElementById("current-date").innerText = fullDate;
+const completedBtn = document.querySelectorAll('.completed-btn');
+const remainingTask = document.getElementById('task-assign');
+const taskCullector = document.getElementById('task-cullector');
+for(const button of completedBtn){
+    button.addEventListener('click',function(event){
+        event.target.disabled=true;
+        const availableTask = parseInt(remainingTask.innerText)-1
+        remainingTask.innerText = availableTask;
+        const totalCullect = parseInt(taskCullector.innerText)+1;
+        taskCullector.innerText = totalCullect;
 
 
-//         const currentDay = new Day();
-//         const optionsDay = { weekday: 'short' };  // পূর্ণ দিনের নাম
-// const dayName = tata.toLocaleDateString('en-US', optionsDay);  // দিনের নাম
-// // দিন প্রদর্শন
-// const dayElement = document.getElementById("current-day").innerText = dayName;
-// // document.getElementById("current-day")
-//         // dayElement.textContent = currentDay;
-        
+    })
+};
+
+// Get the current date
+const currentDate = new Date();
+
+// Format the date (e.g., "March 3, 2025")
+const formattedDate = currentDate.toLocaleDateString('en-US', {   
+    year: 'numeric',   
+    month: 'short',   
+    day: 'numeric'     
+});
+
+const formattedDay = currentDate.toLocaleDateString('en-US', {
+    weekday: 'short',
+})
+document.getElementById('current-date').innerText = formattedDate;
+document.getElementById('current-day').innerText =formattedDay + ",";
 
 
 
-
-
-{/* <div id="currentDate"></div>
-
-
-    // JavaScript to display the current date
-    const dateElement = document.getElementById("current-day");
-    const currentDay = new Date();
-    const formattedDay = currentDay.toLocaleDayString(); // Format the date as needed
-    dateElement.textContent = formattedDay; // Just show the date */}
-
-    
-
-    
 
